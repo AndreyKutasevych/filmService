@@ -1,0 +1,14 @@
+<button id="toggleMenu" class="ui icon button"><!-- this is the button that will be dispalayed when the page just loaded and no other buttons pressed, so the menu will be hidden -->
+    <i class="bars icon"></i>
+</button>
+<nav class="ui top demo sidebar menu" id = "menu" style="background-color:lightgreen;">
+  <header class="ui header item"> <a href="/"> Main page </a></header>
+  <div class="right menu">
+    <a id="signup" class="item" href="/signup"> Signup  </a>
+    <a id="login" class="item" href="/login">  Login </a>
+  </div>
+</nav>
+
+<script>
+   document.querySelector("#{{id}}").classList.add("active");
+</script>

@@ -1,0 +1,11 @@
+<section class="ui center aligned middle aligned segment">
+  <h2>
+    {{singleFilm.title}} <!-- using the title from singleFilm object which is constructed by using the GetFilm function and providing it with relevant id-->
+  </h2>
+{{> listfilms}} <!-- using the list films partitial-->
+{{> addfilm}}
+  <a href="/dashboard" class="home_link"> <!-- home icon link for quicker way to the dashboard-->
+          <i class="large home icon"></i>
+          Back
+        </a>
+</section>

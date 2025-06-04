@@ -1,0 +1,36 @@
+{{#if singleFilm.films}} <!-- if there are any films in that particular genre than code is proceeded to the next line -->
+
+  <table class="ui fixed striped table"><!-- using handlebars and film-store.json database construct a page for one particular genere of movies-->
+    <thead>
+      <tr>
+        <th>Film</th>
+        <th>Director</th>
+        <th>Release date</th>
+        <th>Duration</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleFilm.films}}
+        {{>listOneFilm filmlistId=../singleFilm.id}}
+      {{>editfilm filmlistId=../singleFilm.id}}
+      <script>
+      document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
+            document.querySelector("#film{{@index}}").style.display = "none";
+            document.querySelector("#edit{{@index}}").style.display = "table-row";
+       })
+      document.querySelector("#hideEdit{{@index}}").addEventListener ('click', () => {
+            document.querySelector("#film{{@index}}").style.display = "table-row";
+            document.querySelector("#edit{{@index}}").style.display = "none";
+       })
+</script>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}<!-- if there are no films this messeage will be presented(in our case it will not, because we are not lettin guser to go to the empty page, and passing him a js alert instead-->
+    <h3 class="ui message">
+      Nothing here!
+    </h3>
+
+{{/if}}

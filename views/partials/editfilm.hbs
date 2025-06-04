@@ -1,0 +1,68 @@
+<form
+  class="ui stacked segment form"
+  method="POST"
+  action="/film/{{filmlistId}}/updatefilm/{{id}}"
+>
+  <tr class="hide" id="edit{{@index}}">
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="title"
+          autofocus
+          required
+          title="Please include a valid Title"
+          placeholder="Title"
+          value="{{title}}"
+        />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="director"
+          required
+          title="Please include a valid director"
+          placeholder="Director"
+          value="{{director}}"
+        />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="release"
+          required
+          title="Please include a valid Release Date"
+          placeholder="Release"
+          value="{{release}}"
+        />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="duration"
+          required
+          title="Please enter a valid duration"
+          placeholder="Duration"
+          value="{{duration}}"
+        />
+      </span>
+    </td>
+    <td>
+      <button type = "reset" class="ui icon button" id="hideEdit{{@index}}" 
+        title="Exit without saving">
+         <i class="ui grey undo icon"></i>
+</button>
+    </td>
+    <td>
+      <button type="submit" class="ui icon button" title="Save changes">
+        <i class="ui blue save icon"></i>
+      </button>
+    </td>
+  </tr>
+</form>

@@ -1,0 +1,186 @@
+{{> menu id="about"}} <!-- using the partial menu for menu itself and its button-->
+<section class="ui center aligned middle aligned segment"> <!-- main section of the page-->
+    <h2>About Film App</h2>
+  <div class="ui five statistics" style="margin-top: 1em;"><!-- five icons div and its class, which we can modify in style.css in a public folder-->
+  {{#with info}} <!-- using with handlebar for more convinient usga eof repeating keyword info -->
+    <!-- five icons, information taken from app-store.json database and their style settings(from semantic ui framwork)-->
+    <div class="statistic">
+      <div class="value">
+        <i class="music icon"></i> 
+      </div>
+      <div class="label">
+        App Title: <br>
+        {{appTitle}}
+      </div>
+    </div>
+     <div class="statistic">
+      <div class="value">
+        <i class="code branch icon"></i> 
+      </div>
+      <div class="label">
+        App Version: <br>
+        Version {{version}}
+      </div>
+    </div>    
+    <div class="statistic">
+      <div class="value">
+        <i class="map pin icon"></i> 
+      </div>
+      <div class="label">
+        Made in: <br>
+        {{location}}
+      </div>
+    </div>    
+    <div class="statistic">
+      <div class="value">
+        <i class="user icon"></i> 
+      </div>
+      <div class="label">
+        Created by: <br>
+        {{creators.0.name}}
+      </div>
+    </div> 
+    <div class="statistic">
+      <div class="value">
+        <i class="user plus icon"></i> 
+      </div>
+      <div class="label">
+        With help from: <br>
+        {{creators.1.name}}
+      </div>
+      {{/with}}
+    </div> 
+    <!-- second part of about page with some usage of app-store.json and iframe picture for google maps link-->
+  </div>
+    <h3>
+        Our location:
+    </h3>
+    <div class="info_container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.071976259596!2d-7.112556!3d52.260238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c69c3be08479%3A0x8c90ccac1281b9e8!2sOmniplex%20Cinema%20Waterford!5e0!3m2!1sen!2sie!4v1708687815293!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+        {{#with info}}
+        <i class="large user icon" id="me"></i> 
+      <h3>
+        Joined:{{creators.0.joined}}
+      </h3>
+      <h3>
+       <i class = "ui mail icon"></i>{{creators.0.email}}
+      </h3>
+      <h3>
+        Andrii joined to this company as a web devloper in 2023, and since then he is a good part of team in there.
+      </h3>
+      {{/with}}<!-- closing of with handlebar, if we use something from app-store.js after this line, and dont specify it(as in info.*), we will get error-->
+      </div> 
+    </div>
+  <h2>
+    User statistics:
+  </h2>
+  <div class="ui centered four statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="red microphone icon"></i> 
+            </div>
+            <div class="label">
+              <p class="red">
+                {{displayNumFilmlists}} filmlists
+              </p>
+            </div>
+          </div>
+
+          <div class="statistic">
+            <div class="value">
+              <i class="pink music icon"></i> 
+            </div>
+            <div class="label">
+              <p class="pink">
+                {{displayNumFilms}} films
+              </p>
+            </div>
+          </div>    
+          
+          <div class="statistic">
+            <div class="value">
+              <i class="darkblue music icon"></i> 
+            </div>
+            <div class="label">
+              <p class ="darkblue">
+                {{displayaverageFilmPerFilmlist}} average films per filmlist
+              </p>
+            </div>
+          </div> 
+
+        </div>
+      <div class="ui centered two statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="yellow microphone icon"></i> 
+            </div>
+            <div class="label">
+             <p class="yellow">
+               Largest filmlist: {{displayMaxFilmlist}}
+              </p>
+            </div>
+          </div>
+
+          <div class="statistic">
+            <div class="value">
+              <i class="green music icon"></i> 
+            </div>
+            <div class="label">
+              <p class="green">
+                Smallest filmlist: {{displayMinFilmlist}}
+              </p>
+            </div>
+          </div>    
+
+        </div>
+  <h2>
+    Overall statistics:
+  </h2>
+  <div class="ui centered four statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="red microphone icon"></i> 
+            </div>
+            <div class="label">
+              <p class="red">
+                {{displayTotalFilms}}  total filmlists
+              </p>
+            </div>
+          </div>
+
+          <div class="statistic">
+            <div class="value">
+              <i class="pink music icon"></i> 
+            </div>
+            <div class="label">
+              <p class="pink">
+                {{displayAverageFilmlistPerUser}} average number of filmlists per user
+              </p>
+            </div>
+          </div>    
+          
+          <div class="statistic">
+            <div class="value">
+              <i class="darkblue music icon"></i> 
+            </div>
+            <div class="label">
+              <p class ="darkblue">
+                Largest filmlist: {{displayMaxFilmlistTotal}} 
+              </p>
+            </div>
+          </div> 
+    <div class="statistic">
+            <div class="value">
+              <i class="yellow microphone icon"></i> 
+            </div>
+            <div class="label">
+             <p class="yellow">
+               Smallest filmlist: {{displayMinFilmlistTotal}}
+              </p>
+            </div>
+          </div>  
+
+        </div> 
+  
+</section><!-- main section closing -->

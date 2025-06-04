@@ -1,0 +1,52 @@
+{
+  "filmCollection": [
+    {
+      "userid": "d78f9f76-fe21-4af5-984e-a55720ed7e97",
+      "id": "245b229c-0acb-486a-925d-7152aa1fb4b5",
+      "title": "new one",
+      "films": [
+        {
+          "id": "94dd09e8-4aba-4ada-8fc3-23d4915ebbf4",
+          "title": "new one",
+          "director": "somebody",
+          "release": "whenever",
+          "duration": "long"
+        }
+      ],
+      "date": "2024-04-16T11:28:02.482Z",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1713266882/jdyxrug2hsrwzdwb8pat.jpg"
+    },
+    {
+      "userid": "c89e64f2-c153-4cc6-88db-3cffd70c0767",
+      "id": "fe3a3b65-216e-4695-895c-697819adc6c9",
+      "title": "123",
+      "films": [],
+      "date": "2024-04-17T21:36:38.966Z",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1713389799/tehgmca5budkcdiczjeq.jpg"
+    },
+    {
+      "userid": "c89e64f2-c153-4cc6-88db-3cffd70c0767",
+      "id": "87c2f2dd-23b2-4fe6-b337-30f558fb4d7a",
+      "title": "1111",
+      "films": [],
+      "date": "2024-04-17T21:37:12.421Z",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1713389832/hvdeyg3b1pvjxhazydrl.jpg"
+    },
+    {
+      "userid": "08a0f23d-4c7d-4702-bcd5-fee25e994c4e",
+      "id": "46d81925-44d0-4230-b818-c01873a07cc6",
+      "title": "New",
+      "films": [
+        {
+          "id": "c88be2cf-3a4e-4d66-9e0f-f7327d7c0aa5",
+          "title": "k",
+          "director": "k",
+          "release": "99",
+          "duration": "32"
+        }
+      ],
+      "date": "2024-04-29T19:21:02.575Z",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1714418462/fcbmc9xnfkqu7tvecenf.png"
+    }
+  ]
+}
