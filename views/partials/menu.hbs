@@ -1,0 +1,16 @@
+<button id="toggleMenu" class="ui icon button"><!-- this is the button that will be dispalayed when the page just loaded and no other buttons pressed, so the menu will be hidden -->
+    <i class="bars icon"></i>
+</button>
+<nav class="ui top demo sidebar menu" id = "menu">
+  <header class="ui header item"> <a href="/start"> Fims App </a></header>
+  <div class="right menu">
+    <span class="name">{{fullname}}</span>
+    <span class="profilepic"><img src="{{picture}}" class="ui avatar image"></span>
+    <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
+    <a id="about" class="item" href="/about"> About </a>
+    <a id="logout" class="item" href="/logout"> Logout </a>
+  </div>
+</nav>
+<script>
+   document.querySelector("#{{id}}").classList.add("active");
+</script>

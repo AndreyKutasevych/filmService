@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "firstName": "Andrii",
+      "lastName": "Kutasevych",
+      "email": "andrdroniuc@gmail.com",
+      "password": "secret",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1713212936/m7lkwfpjs6f3mu8ubzjw.jpg",
+      "id": "d78f9f76-fe21-4af5-984e-a55720ed7e97"
+    },
+    {
+      "firstName": "Milena",
+      "lastName": "Korol",
+      "email": "stupid.milena@gmail.com",
+      "password": "bebra228",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1713389719/oddwpufkpeigc9jiwd7z.jpg",
+      "id": "c89e64f2-c153-4cc6-88db-3cffd70c0767"
+    },
+    {
+      "firstName": "Brenda",
+      "lastName": "Mullally",
+      "email": "bm@wit.ie",
+      "password": "secret",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1714418333/d3zhjdcvnahgbpaksvxu.png",
+      "id": "08a0f23d-4c7d-4702-bcd5-fee25e994c4e"
+    },
+    {
+      "firstName": "Brenda",
+      "lastName": "M",
+      "email": "bn@wit.ie",
+      "password": "secret",
+      "picture": "http://res.cloudinary.com/andrey23/image/upload/v1714468305/luyeggewc7c9yqq9vhfc.png",
+      "id": "793cb98e-1c33-4fe3-9eda-f2cd9618e5bf"
+    }
+  ]
+}

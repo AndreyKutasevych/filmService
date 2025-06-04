@@ -1,0 +1,69 @@
+<section class="ui center aligned middle aligned segment">
+
+  <h2>Filmlist App Dashboard</h2>
+
+  {{#unless
+    films
+  }}<!-- if we dont have FilmCollection we will get this message-->
+    <h3 class="ui message">
+      Start adding your filmlists!
+    </h3>
+  {{/unless}}
+  <div class="ui five column center aligned padded grid">
+
+    {{#each films}}
+      <!-- we have multiple arrays, so we are using each handlebar to reduce repeating elements of FilmCollection-->
+      <section
+        class="ui left red aligned middle aligned segment"
+        id="dashboard2"
+      >
+        {{#if
+          films
+        }}<!-- if we have films in the current array we will proceed to the next line of code, otherwise we will get an js alert, when we try to press the view button-->
+          <h3
+            class="ui header"
+          ><!-- using handlebars and film store.json database, constructing our page -->
+            {{title}}
+          </h3>
+          <p
+            class="menu_text"
+          >
+            Total films:{{films.length}}
+          </p>
+          <div class="ui card">
+            <div class="image">
+              <img src="{{picture}}" />
+            </div>
+          </div>
+          <a href="/film/{{id}}" class="ui folder icon button">
+            <i class="open folder green icon"></i>
+          </a>
+          <a
+            href="/dashboard/deletefilmlist/{{id}}"
+            class="ui trash icon button"
+          >
+            <i class="trash red icon"></i>
+          </a>
+        {{else}}
+          <div class="ui card">bgf
+            <div class="image">
+              <img src="{{picture}}" />
+            </div>
+          </div>
+          <h3 class="ui header">
+            {{title}}
+          </h3>
+          <a href="/film/{{id}}" class="ui folder icon button empty">
+            <i class="open folder icon"></i>
+          </a>
+          <a
+            href="/dashboard/deletefilmlist/{{id}}"
+            class="ui trash icon button"
+          >
+            <i class="trash red icon"></i>
+          </a>
+        {{/if}}
+      </section>
+    {{/each}}
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{
+  "info": {
+    "appTitle": "My Films App",
+    "version": 0.5,
+    "creators": [
+      {
+        "name": "Andrii Kutasevych",
+        "role": "Web Developer",
+        "joined":"2023",
+        "email":"andrii_kutasevych@films_app.ie"
+      },
+      {
+        "name": "A.K.Other",
+        "role": "Web Developer"
+      }
+    ],
+    "location": "Waterford"
+  }
+}

@@ -1,0 +1,26 @@
+<tr id="film{{@index}}">
+          <td>
+            {{title}}
+          </td>
+          <td>
+            {{director}}
+          </td>
+          <td>
+            {{release}}
+          </td>
+          <td>
+            {{duration}}
+          </td>
+          
+          <td class="center aligned">
+              <button class="ui icon button" title="Edit film" id="showEdit{{@index}}">
+    <i class="ui yellow pencil icon"></i>
+</button>
+            </td>
+          <td class="center aligned">
+    <a href="/film/{{filmlistId}}/deletefilm/{{id}}" 
+	   class="ui icon button" title="Delete film">
+        <i class="ui red trash icon"></i>
+    </a>
+</td>
+        </tr>

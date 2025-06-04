@@ -1,0 +1,96 @@
+/* all the styles for the website are configured here */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.menu_text{
+  color:black;
+}
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+.ui.top.demo.menu{
+  background-color:#81B9F7;
+}
+.ui.menu{
+  background-color:lightgreen;
+}
+.ui.center.aligned.middle.aligned.segment{
+  background-color:#5091DA;
+  color:white;
+}
+img{
+  width:50%;
+}
+.info_container{
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+#start{
+  height:600px;
+}
+#me{
+  transform:scale(3);
+}
+#logo_icon{
+  width:3.5%;
+}
+.home_link{
+  color:white;
+}
+#dashboard2{
+  padding: 40px;
+  margin: 20px;
+}
+.ui.folder.icon.button{
+  position:absolute;
+  bottom:15;
+  left:15;
+}
+.ui.trash.icon.button{
+  position:absolute;
+  bottom:15;
+  right:15;
+}
+.red{
+  color:red;
+}
+.darkblue{
+  color:darkblue;
+}
+.yellow{
+  color:yellow;
+}
+.green{
+  color:green;
+}
+.pink{
+  color:pink;
+}
+.hide{
+  display:none;
+}
+.name{
+  padding-top:22.5px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+#lightgreen{
+  background-color:lightgreen;
+  color:darkblue;
+}
+.profilepic{
+  padding-top:15px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+}
